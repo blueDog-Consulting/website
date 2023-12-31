@@ -18,6 +18,7 @@ title = "blueDog Consulting LLC"
   [params.homepage]
     show_contact_box = false      # show / hide the contaxt box on the homepage
     show_services_button = true # show / hide the "view all services" button
+    show_features = false          # show / hide the features section on the homepage
 
   [params.logo]
     mobile = "images/logo/logo.png"

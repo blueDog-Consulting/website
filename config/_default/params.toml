@@ -1,0 +1,43 @@
+# In most cases you will only want to set the google_analytics_id OR the google_tag_manager_id. If you have Google Analytics included in your GTM tags don't put your GA ID here. Otherwise your data might be useless.
+google_analytics_id = ""
+google_tag_manager_id = ""
+favicon = "favicon.jpg"
+
+[homepage]
+show_contact_box = true      # show / hide the contaxt box on the homepage
+show_services_button = false # show / hide the "view all services" button
+show_features = false         # show / hide the features section on the homepage
+
+[logo]
+mobile = "images/logo/logo.png"
+mobile_height = "36px"
+desktop = "images/logo/logo.png"
+desktop_height = "100px"
+alt = "logo for blueDog Consulting LLC"
+
+[fonts]
+# sets the google font link in layouts/partials/google-fonts.html
+google_fonts = 'https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap'
+heading = "Noto Sans Display"
+base = "Noto Sans"
+
+[colors]
+primary = "#0396FF"
+black = "#2f2f41"
+white = "#ffffff"
+white_offset = "#f6f7ff"
+grey = "#5C5A5A"
+
+[seo]
+meta_twitter_site = "@Consult_blueDog"
+meta_twitter_creator = "@Consult_blueDog"
+meta_og_image = "https://www.zerostatic.io/theme/hugo-serif/hugo-serif-screenshot.png"
+
+[services]
+summary_truncate = 120 # How many characters to include in the summary of the services before truncating
+
+[team]
+summary_large_truncate = 120 # How many characters to include in the summary of the team bios (large layout) before truncating
+
+[footer]
+copyright_text = 'Copyright &copy; 2024 <a href="bluedog.dev">blueDog Consulting, LLC</a>. All rights reserved.'

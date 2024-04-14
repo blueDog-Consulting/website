@@ -1,0 +1,30 @@
+[[main]]
+name = "Services"
+url = "/services/"
+weight = 1
+
+[[main]]
+name = "Team"
+url = "/team/"
+weight = 2
+
+[[main]]
+name = "About"
+url = "/about/"
+weight = 3
+
+[[main]]
+name = "Contact"
+url = "/contact/"
+weight = 4
+
+# Footer Menu
+[[footer]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[footer]]
+name = "Contact"
+url = "/contact/"
+weight = 2

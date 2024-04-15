@@ -12,74 +12,26 @@
   </div>
 </div>
 
-<div class="container pt-6 pb-6">
+<!-- <div class="container pt-6 pb-6">
   <div class="row">
     {{ range .Pages.ByWeight }}
     <div class="col-12 col-md-6 mb-3">{{ .Render "summary" }}</div>
     {{ end }}
   </div>
-</div>
+</div> -->
 
-<div class="container px-4 py-5" id="icon-grid">
-  <h2 class="pb-2 border-bottom">Icon grid</h2>
-
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-    <div class="col d-flex align-items-start">
-      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg>
-      <div>
-        <h4 class="fw-bold mb-0">Featured title</h4>
-        <p>Paragraph of text beneath the heading to explain the heading.</p>
+<div class="container pt-6 pb-6">
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 py-5">
+    {{ range .Pages.ByWeight }}
+    <div class="service service-summary">
+      <div class="service-content">
+        <h2 class="service-title">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+        <p>{{ .Summary | plainify | htmlUnescape }}</p>
       </div>
     </div>
-    <div class="col d-flex align-items-start">
-      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"/></svg>
-      <div>
-        <h4 class="fw-bold mb-0">Featured title</h4>
-        <p>Paragraph of text beneath the heading to explain the heading.</p>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"/></svg>
-      <div>
-        <h4 class="fw-bold mb-0">Featured title</h4>
-        <p>Paragraph of text beneath the heading to explain the heading.</p>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"/></svg>
-      <div>
-        <h4 class="fw-bold mb-0">Featured title</h4>
-        <p>Paragraph of text beneath the heading to explain the heading.</p>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"/></svg>
-      <div>
-        <h4 class="fw-bold mb-0">Featured title</h4>
-        <p>Paragraph of text beneath the heading to explain the heading.</p>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"/></svg>
-      <div>
-        <h4 class="fw-bold mb-0">Featured title</h4>
-        <p>Paragraph of text beneath the heading to explain the heading.</p>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"/></svg>
-      <div>
-        <h4 class="fw-bold mb-0">Featured title</h4>
-        <p>Paragraph of text beneath the heading to explain the heading.</p>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"/></svg>
-      <div>
-        <h4 class="fw-bold mb-0">Featured title</h4>
-        <p>Paragraph of text beneath the heading to explain the heading.</p>
-      </div>
-    </div>
+    {{ end }}
   </div>
 </div>
 {{ end }}

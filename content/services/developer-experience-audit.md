@@ -6,5 +6,10 @@ draft: false
 weight: 3
 ---
 
-From the simplicity of the setup process to the complexity of solving production issues, Developer Experience (DevEx) directly impacts developer productivity, satisfaction, and ultimately, the quality of the products they build and use. <!--more--> This means that the ease of use, the reliability, how accessible and understandable your documentation is, and how smooth the onboarding is all have an impact on the overall dev experience.
+We will evaluate your developer tools, documentation, and onboarding - from a developer's perspective. We'll identify friction points and opportunities to streamline the developer journey, and suggest improvements to create a positive and productive experience for developers using your platform or tools.<!--more-->
 
+## What we will provide
+
+- DevEx audit report with pain point analysis
+- Recommendations for improved developer workflows
+- Action plan to streamline development processes

@@ -34,10 +34,10 @@ meta_twitter_creator = "@Consult_blueDog"
 meta_og_image = "https://www.zerostatic.io/theme/hugo-serif/hugo-serif-screenshot.png"
 
 [services]
-summary_truncate = 120 # How many characters to include in the summary of the services before truncating
+summary_truncate = 300 # How many characters to include in the summary of the services before truncating
 
 [team]
-summary_large_truncate = 120 # How many characters to include in the summary of the team bios (large layout) before truncating
+summary_large_truncate = 300 # How many characters to include in the summary of the team bios (large layout) before truncating
 
 [footer]
 copyright_text = 'Copyright &copy; 2024 <a href="bluedog.dev">blueDog Consulting, LLC</a>. All rights reserved.'

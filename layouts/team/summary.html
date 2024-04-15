@@ -1,7 +1,7 @@
 <div class="team team-summary">
   {{ if .Params.image }}
   <div class="team-image">
-    <img width="360" height="360" alt="Photo of {{ .Title }}" class="img-fluid mb-2" src="{{ .Params.image | relURL }}" />
+    <img width="360" alt="Photo of {{ .Title }}" class="img-fluid mb-2" src="{{ .Params.image | relURL }}" />
   </div>
   {{ end }}
   <div class="team-meta">
@@ -9,9 +9,26 @@
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </h2>
     <p class="team-description">{{ .Params.Jobtitle }}</p>
-    {{ if .Params.Linkedinurl }}
-      <a target="_blank" rel="noreferrer" href="{{ .Params.Linkedinurl }}">LinkedIn</a>
-    {{ end }}
-  </div>
+      {{ if .Params.Linkedinurl }}
+        <a target="_blank" rel="noreferrer" href="{{ .Params.Linkedinurl }}">
+          <i class="fa-brands fa-linkedin"></i>
+        </a> 
+      {{ end }}
+      {{ if .Params.Twitterhandle }}
+        <a target="_blank" rel="noreferrer" href="https://twitter.com/{{ .Params.Twitterhandle }}">
+          <i class="fa-brands fa-square-twitter"></i>
+        </a>  
+      {{ end }}
+      {{ if .Params.Github }}
+        <a target="_blank" rel="noreferrer" href="https://twitter.com/{{ .Params.Github }}">
+          <i class="fa-brands fa-square-github"></i>
+        </a>  
+      {{ end }}
+      {{ if .Params.Websiteurl }}
+        <a target="_blank" rel="noreferrer" href="https://twitter.com/{{ .Params.Websiteurl }}">
+          <i class="fa-solid fa-globe"></i>
+        </a>  
+      {{ end }}
+</div>
   <div class="team-content"></div>
 </div>

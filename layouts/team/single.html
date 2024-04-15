@@ -6,7 +6,7 @@
     <div class="col-12 col-md-8">
       {{ if .Params.image }}
         <div>
-          <img width="320" height="320" alt="Photo of {{ .Title }}" class="img-fluid mb-2" src="{{ .Params.image | relURL }}" />
+          <img width="320" alt="Photo of {{ .Title }}" class="img-fluid mb-2" src="{{ .Params.image | relURL }}" />
         </div>
       {{ end }}
       <div class="team-summary">
@@ -14,7 +14,24 @@
           <h1 class="team-name">{{ .Title }}</h1>
           <p class="team-description">{{ .Params.Jobtitle }}</p>
           {{ if .Params.Linkedinurl }}
-            <a target="_blank" rel="noreferrer" href="{{ .Params.Linkedinurl }}">LinkedIn</a>
+            <a target="_blank" rel="noreferrer" href="{{ .Params.Linkedinurl }}">
+              <i class="fa-brands fa-linkedin"></i>
+            </a> 
+          {{ end }}
+          {{ if .Params.Twitterhandle }}
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/{{ .Params.Twitterhandle }}">
+              <i class="fa-brands fa-square-twitter"></i>
+            </a>  
+          {{ end }}
+          {{ if .Params.Github }}
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/{{ .Params.Github }}">
+              <i class="fa-brands fa-square-github"></i>
+            </a>  
+          {{ end }}
+          {{ if .Params.Websiteurl }}
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/{{ .Params.Websiteurl }}">
+              <i class="fa-solid fa-globe"></i>
+            </a>  
           {{ end }}
         </div>
         <div class="content">{{.Content}}</div>

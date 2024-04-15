@@ -8,4 +8,4 @@ intro_image_hide_on_mobile: false
 
 # Services that grow with your business
 
-Aliquam erat volutpat. Morbi nisl tortor, dignissim eget efficitur vel, auctor non felis. Fusce quis viverra mi. Aenean quis massa pretium, ullamcorper nisi eget, hendrerit odio.
+We offer a variety of services geared towards the areas you either need to add, or are looking to improve, like: Content creation, Event planning, Community management, Developer onboarding, Documentation, and more. You'll find a brief rundown of these services below. Reach out and let us know how we can help.

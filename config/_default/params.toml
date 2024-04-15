@@ -5,8 +5,8 @@ favicon = "favicon.jpg"
 
 [homepage]
 show_contact_box = true      # show / hide the contaxt box on the homepage
-show_services_button = false # show / hide the "view all services" button
-show_features = false         # show / hide the features section on the homepage
+show_services_button = true # show / hide the "view all services" button
+show_features = true         # show / hide the features section on the homepage
 
 [logo]
 mobile = "images/logo/logo.png"

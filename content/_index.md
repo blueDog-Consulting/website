@@ -13,4 +13,4 @@ intro_image_hide_on_mobile: true
 
 # Developer Relations and Community consulting
 
-We're here to help your company build a solid DevRel and Community program, as well as improve the Developer Experience with your tools and products.
+We offer a variety of services geared towards helping your company build a solid DevRel and Community program, or improve the Developer Experience with your tools and products. Reach out and let us know how we can help.

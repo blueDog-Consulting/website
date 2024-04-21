@@ -33,10 +33,10 @@
 <div class="container">
     <div class="row justify-content-center">
       {{ range where .Pages.ByWeight ".Params.promoted" true }}
-        <div class="col-md-7 col-lg-4 mb-5 mb-lg-0 wow fadeIn">
+        <div class="col-12 col-md-4 mb-3">
             <div class="card border-0 shadow">
             {{ if .Params.image }}
-              <img width="240" alt="Photo of {{ .Title }}" class="img-fluid mb-2" src="{{ .Params.image | relURL }}" />
+              <img width="240" alt="Photo of {{ .Title }}" class="img-fluid mb-2" style="text-align: center;" src="{{ .Params.image | relURL }}" />
             {{ end }}
                 <div class="card-body p-1-9 p-xl-5">
                     <div class="mb-4">

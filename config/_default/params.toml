@@ -4,7 +4,7 @@ google_tag_manager_id = ""
 favicon = "favicon.jpg"
 
 [homepage]
-show_contact_box = true      # show / hide the contaxt box on the homepage
+show_contact_box = false      # show / hide the contaxt box on the homepage
 show_services_button = true # show / hide the "view all services" button
 show_features = true         # show / hide the features section on the homepage
 
@@ -40,4 +40,4 @@ summary_truncate = 300 # How many characters to include in the summary of the se
 summary_large_truncate = 300 # How many characters to include in the summary of the team bios (large layout) before truncating
 
 [footer]
-copyright_text = 'Copyright &copy; 2024 <a href="bluedog.dev">blueDog Consulting, LLC</a>. All rights reserved.'
+copyright_text = 'Copyright &copy; 2024 <a href="bluedog.dev">blueDog Consulting LLC</a>. All rights reserved.'

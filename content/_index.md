@@ -11,6 +11,6 @@ intro_image_absolute_offset: "auto auto -100px -80px" # used to tweak the positi
 intro_image_hide_on_mobile: true
 ---
 
-# Developer Relations and Community consulting
+# Developer Relations and Community consultancy
 
 We offer a variety of services geared towards helping your company build a solid DevRel and Community program, or improve the Developer Experience with your tools and products. Reach out and let us know how we can help.

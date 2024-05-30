@@ -1,3 +1,40 @@
 # email: 'jeremy.meiss+blueDog@gmail.com'
 # phone:
 contact_button_link: 'contact'
+
+# form details
+action: "#" #contact form updated to with Netlify, https://docs.netlify.com/forms/setup/
+placeholders: false
+fields: 
+- name: title
+  input_type: html
+  placeholder: <h3>Contact Details</h3>
+  required: true
+- name: name
+  input_type: text
+  placeholder: Your Name
+  required: true
+- name: email
+  input_type: email
+  placeholder: Your Email address
+  required: true
+- name: name
+  input_type: text
+  placeholder: Your Company
+  required: false
+# - name: message
+#   input_type: textarea
+#   placeholder: Message
+#   required: false
+- name: schedule
+  input_type: checkbox
+  placeholder: I would like to schedule a time to chat.
+  required: false
+- name: terms
+  input_type: checkbox
+  placeholder: By checking this box, I agree to be contacted by <strong>blueDog Consulting</strong> for the purposes of information _only_.
+  required: required
+- name: submit
+  input_type: submit
+  placeholder: Submit form
+  required: true

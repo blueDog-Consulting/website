@@ -1,0 +1,66 @@
+{{ define "body_classes" }}page-contact{{ end }}
+
+{{ define "main" }}
+<div class="container pb-6 pt-6 pt-md-14 pb-md-14">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">{{.Title}}</h1>
+<!--        {{ partial "call.html" (dict "site" .Site "context" . "show_button" "false") }} -->
+        <div class="content mt-4">{{.Content}}</div>
+        {{ with index page.Site.Data.contact }}
+        {{ $defaulttext := .placeholders | default "false" }}
+          <form id="contactform" class="form" method="POST" action="{{ .action }}" role="form" netlify>
+            {{- range .fields -}}
+              {{- if eq .input_type `textarea` -}}
+                <div class="">
+                  <label class="inborder{{ if eq $defaulttext true }} sr-only{{ end }}" 
+                      for="{{ .name }}">
+                      {{ .placeholder }}
+                  </label>
+                  <textarea name="{{ .name }}"
+                      id="{{ .name }}"
+                      cols="30" 
+                      rows="10" 
+                      class="form-control" 
+                      {{ if eq $defaulttext true }}
+                          placeholder="{{ .placeholder }}"
+                      {{ end }} 
+                      {{ if eq $.required true }}
+                          required></textarea><font color = "red">*</font>
+                      {{ else }}
+                          ></textarea>
+                      {{ end }}
+                </div>
+              {{- else if eq .input_type `radio` -}}
+                <div class="radio">
+                  <label><input type="radio" name="{{ .name }}" value="{{ .placeholder }}" required>{{ .placeholder }}</label>
+                </div>
+              {{- else if eq .input_type `checkbox` -}}
+                <div class="checkbox">
+                  <label><input type="checkbox" name="{{ .name }}" value="{{ .placeholder }}" required>{{ .placeholder | safeHTML }}</label>
+                </div>
+              {{- else if eq .input_type `html` -}}
+                {{ .placeholder | safeHTML }}
+              {{- else if eq .input_type `submit` -}}
+                <div class="submit">
+                  <div><input type="{{ .input_type }}" value="{{ .placeholder }}" class="button" /></div>
+                </div>
+              {{- else -}}
+                <div>
+                  <label class="inborder{{ if eq $defaulttext true }} sr-only{{ end }}" for="{{ .name }}">{{ .placeholder }}</label>
+                  <input type="{{ .input_type }}" name="{{ .name }}" id="{{ .name }}" class="form-control" {{ if eq $defaulttext true }}placeholder="{{ .placeholder }}"{{ end }} required>
+                </div>
+              {{- end -}}
+            {{- end -}}
+            <div class="form-group">
+              <input type="hidden" name="subject" value="[Website] New %{formName} submission - (%{submissionId})" />
+              <input type="hidden" name="form-type" value="add-to-mailing-list" />
+            </div>
+          </form>
+        {{- end -}}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

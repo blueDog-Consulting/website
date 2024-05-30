@@ -18,6 +18,13 @@
   {{ end }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
+  <!-- Custom CSS -->
+  {{ $scss := resources.Get "scss/custom.scss" }}
+  {{ $custom_css := $scss | resources.ExecuteAsTemplate "custom.scss" . | toCSS }}
+  {{ $custom_css = $custom_css | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $custom_css.RelPermalink }}">
+
+
   {{ block "header_css" . }}{{ end }}
 
   {{ block "meta_tags" . }}

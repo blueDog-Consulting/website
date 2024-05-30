@@ -22,12 +22,36 @@
 
   {{ block "meta_tags" . }}
     {{ with .Params.description }}<meta name="description" content="{{ . }}"/>{{ end }}
-    <meta property="og:title" content="{{ .Params.meta_title | default .Title }}"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="{{ .Permalink }}"/>
-    {{ with .Params.image | default .Site.Params.seo.meta_og_image }}<meta property="og:image" content="{{ . | absURL }}"/>{{ end }}
-    {{ with .Params.description }}<meta property="og:description" content="{{ . }}"/>{{ end }}
-    <meta name="twitter:card" content="summary"/>
+
+      <!-- Facebook Meta Tags -->
+      <meta property="og:url" content="{{ .Permalink }}"/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:title" content="{{ .Params.meta_title | default .Title }}"/>
+      {{ with .Params.description }}
+        <meta property="og:description" content="{{ . }}"/>
+      {{ end }}
+      {{ with .Params.image | default .Site.Params.seo.meta_og_image }}
+        <meta property="og:image" content="{{ . | absURL }}"/>
+      {{ end }}
+
+      <!-- Twitter Meta Tags -->
+      <!-- <meta name="twitter:card" content="summary"/> -->
+      {{ $url := urls.Parse .Permalink }}
+      {{ $name := split $url.Host "." }}
+      {{ $domain := index $name 1 }}
+      <meta name="twitter:card" content="summary_large_image">
+      <meta property="twitter:domain" content="{{ $domain }}">
+      <meta property="twitter:url" content="{{ .Permalink }}">
+      <meta name="twitter:title" content="{{ .Params.meta_title | default .Title }}">
+      <meta name="twitter:description" content="blueDog Consulting is a DevRel and Community consultancy.">
+      <meta name="twitter:image" content="">
+      {{ with .Site.Params.seo.meta_twitter_site }}
+        <meta name="twitter:site" content="{{ . }}"/>
+      {{ end }}
+      {{ with .Site.Params.seo.meta_twitter_creator }}
+        <meta name="twitter:creator" content="{{ . }}"/>
+      {{ end }}
+      <!-- Meta Tags Generated via https://www.opengraph.xyz -->
     {{ with .Site.Params.seo.meta_twitter_site }}<meta name="twitter:site" content="{{ . }}"/>{{ end }}
     {{ with .Site.Params.seo.meta_twitter_creator }}<meta name="twitter:creator" content="{{ . }}"/>{{ end }}
   {{ end }}

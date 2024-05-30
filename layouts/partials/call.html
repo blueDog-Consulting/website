@@ -1,4 +1,9 @@
-<div class="call">
+<div style="align-content: center;">
+  {{ if eq .show_button "true"}}
+    <a href="{{ .site.Data.contact.contact_button_link | relURL }}" class="button">Contact Us</a>
+{{ end }}
+
+<!--
   <div class="call-box-top">
     {{ if .site.Data.contact.phone }}
         <div class="call-phone"><strong>Phone: </strong> {{ .site.Data.contact.phone }} </div>
@@ -16,4 +21,5 @@
         <a href="{{ .site.Data.contact.contact_button_link | relURL }}" class="button">Contact</a>
       </div>
     {{ end }}
+    -->
 </div>

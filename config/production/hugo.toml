@@ -1,4 +1,6 @@
 
+google_analytics_id = 'G-VLW2VPS7H5'
+
 [services]
   [services.disqus]
     shortname = ''

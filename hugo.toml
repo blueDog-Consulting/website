@@ -1,5 +1,18 @@
-baseURL = "/"
+baseURL = "https://bluedog.dev"
 themesDir = "themes"
 theme = "hugo-serif-theme"
 languageCode = "en-us"
 title = "blueDog Consulting LLC"
+
+[services]
+  [services.disqus]
+    shortname = ''
+  [services.googleAnalytics]
+    id = ''
+  [services.instagram]
+    accessToken = ''
+    disableInlineCSS = false
+  [services.rss]
+    limit = -1
+  [services.twitter]
+    disableInlineCSS = false

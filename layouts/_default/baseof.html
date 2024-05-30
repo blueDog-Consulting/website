@@ -38,7 +38,7 @@
       <!-- <meta name="twitter:card" content="summary"/> -->
       {{ $url := urls.Parse .Permalink }}
       {{ $name := split $url.Host "." }}
-      {{ $domain := index $name 1 }}
+      {{ $domain := index $name 0 }}
       <meta name="twitter:card" content="summary_large_image">
       <meta property="twitter:domain" content="{{ $domain }}">
       <meta property="twitter:url" content="{{ .Permalink }}">

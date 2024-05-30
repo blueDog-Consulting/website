@@ -28,7 +28,7 @@ grey = "#5C5A5A"
 [seo]
 meta_twitter_site = "@Consult_blueDog"
 meta_twitter_creator = "@Consult_blueDog"
-meta_og_image = ""
+meta_og_image = "/images/social/og-image.jpg"
 
 [services]
 summary_truncate = 300 # How many characters to include in the summary of the services before truncating

@@ -1,5 +1,5 @@
 ---
-title: "Ospo as a Service"
+title: "OSPO as a Service"
 date: 2024-04-16T07:09:16-07:00
 featured: true
 draft: false

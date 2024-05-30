@@ -1,0 +1,13 @@
+
+[services]
+  [services.disqus]
+    shortname = ''
+  [services.googleAnalytics]
+    id = 'G-VLW2VPS7H5'
+  [services.instagram]
+    accessToken = ''
+    disableInlineCSS = false
+  [services.rss]
+    limit = -1
+  [services.twitter]
+    disableInlineCSS = false

@@ -3,7 +3,8 @@ title: 'About Us'
 date: 2024-04-12T13:44:30+10:00
 draft: false
 layout: about
-intro_image: "images/illustrations/services.jpg"
+intro_image: "images/illustrations/about.jpg"
+intro_image_alt: "Image by studiogstock on Freepik"
 name: Jeremy Meiss
 image: 'images/team/jeremy-meiss.jpg'
 jobtitle: 'Co-Founder, Lead Consultant'

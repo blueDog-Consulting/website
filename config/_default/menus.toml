@@ -1,15 +1,15 @@
 [[main]]
 name = "Services"
 url = "/services/"
-weight = 1
-
-[[main]]
-name = "Team"
-url = "/team/"
 weight = 2
 
+# [[main]]
+# name = "Team"
+# url = "/team/"
+# weight = 2
+
 [[main]]
-name = "About"
+name = "About Us"
 url = "/about/"
 weight = 3
 
@@ -25,11 +25,16 @@ url = "/"
 weight = 1
 
 [[footer]]
+name = "About Us"
+url = "/about/"
+weight = 2
+
+[[footer]]
 name = "Services"
 url = "/services/"
-weight = 2
+weight = 3
 
 [[footer]]
 name = "Contact"
 url = "/contact/"
-weight = 2
+weight = 4

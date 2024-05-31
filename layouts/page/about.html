@@ -1,0 +1,60 @@
+{{ define "body_classes" }}page-about-list{{ end }}
+
+{{ define "main" }}
+<!-- Page adapted from team/list.html and combines page/about.html with team info since there's just one person -->
+<div class="intro">
+  <div class="container">
+    <div class="row justify-content-start">
+        <div class="col-12 col-md-7 order-2 order-md-1">
+            <h1>{{ .Title | markdownify }}</h1>
+        </div>
+        <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        {{ .Content }}
+        </div>
+      {{ partial "intro-image.html" . }}
+    </div>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-start">
+        <div class="col-12 col-md-5 col-lg-3 order-1 order-md-1 position-relative">
+            <img
+            alt="Photo of {{ .Params.name }}"
+            class="intro-image"
+            src="{{ .Params.image | relURL }}" 
+            width="240"
+            />
+        </div>
+        <div class="col-12 col-md-5 col-lg-9 order-2 order-md-1">
+            <!-- <div class="team-summary"> -->
+            <div class="team-meta mb-2">
+                <h2 class="team-name">{{ .Params.name }}</h1>
+                <p class="team-description">{{ .Params.Jobtitle }}</p>
+                {{ if .Params.Linkedinurl }}
+                <a target="_blank" rel="noreferrer" href="{{ .Params.Linkedinurl }}">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a> 
+                {{ end }}
+                {{ if .Params.Twitterhandle }}
+                <a target="_blank" rel="noreferrer" href="https://twitter.com/{{ .Params.Twitterhandle }}">
+                    <i class="fa-brands fa-square-twitter"></i>
+                </a>  
+                {{ end }}
+                {{ if .Params.Github }}
+                <a target="_blank" rel="noreferrer" href="https://twitter.com/{{ .Params.Github }}">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>  
+                {{ end }}
+                {{ if .Params.Websiteurl }}
+                <a target="_blank" rel="noreferrer" href="https://twitter.com/{{ .Params.Websiteurl }}">
+                    <i class="fa-solid fa-globe"></i>
+                </a>  
+                {{ end }}
+            </div>
+            <div class="about-content">{{.Params.description | markdownify}}</div>
+            </div>
+      </div>
+    </div>
+</div>
+{{ end }}

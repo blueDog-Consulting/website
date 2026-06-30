@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0396ff;
+  --color-primary-dark: #0280db;
+  --color-ink: #2f2f41;
+  --color-muted: #5c5a5a;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f6f7ff;
+  --color-border: #e4e8f5;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-plus-jakarta), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-surface text-ink antialiased;
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    @apply font-semibold tracking-tight text-ink;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .prose-content {
+    @apply text-muted leading-relaxed;
+  }
+
+  .prose-content h1 {
+    @apply mb-6 text-4xl md:text-5xl;
+  }
+
+  .prose-content h2 {
+    @apply mb-4 mt-8 text-2xl md:text-3xl;
+  }
+
+  .prose-content p {
+    @apply mb-4;
+  }
+
+  .prose-content a {
+    @apply text-primary underline-offset-4 hover:underline;
+  }
+
+  .prose-content ul {
+    @apply mb-4 list-disc space-y-2 pl-6;
+  }
+
+  .gradient-mesh {
+    background:
+      radial-gradient(circle at 20% 20%, rgb(3 150 255 / 0.18), transparent 45%),
+      radial-gradient(circle at 80% 0%, rgb(3 150 255 / 0.12), transparent 40%),
+      radial-gradient(circle at 100% 80%, rgb(47 47 65 / 0.06), transparent 35%),
+      linear-gradient(180deg, #f6f7ff 0%, #ffffff 55%);
+  }
+}

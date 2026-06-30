@@ -5,7 +5,7 @@ contact_button_link: 'contact'
 # form details
 action: "#" #contact form updated to with Netlify, https://docs.netlify.com/forms/setup/
 placeholders: false
-fields: 
+fields:
 - name: title
   input_type: html
   placeholder: <h3>Contact Details</h3>
@@ -18,7 +18,7 @@ fields:
   input_type: email
   placeholder: Your Email address
   required: true
-- name: name
+- name: company
   input_type: text
   placeholder: Your Company
   required: false

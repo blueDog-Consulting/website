@@ -5,11 +5,16 @@
 [build.environment]
   NODE_VERSION = "24"
 
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
 [context.production.environment]
   NEXT_PUBLIC_GA_ID = "G-VLW2VPS7H5"
 
 [context.branch-deploy]
   command = "npm run build"
+  publish = ".next"
 
 [context.deploy-preview]
   command = "npm run build"
+  publish = ".next"

@@ -1,8 +1,6 @@
 ---
-title: "Event Planning"
-date: 2024-04-14T18:33:39-07:00
+title: Event Planning
 featured: true
-draft: false
 weight: 100
 ---
 

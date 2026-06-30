@@ -1,8 +1,6 @@
 ---
-title: "Bespoke Event Presence"
-date: 2024-04-14T18:33:56-07:00
+title: Bespoke Event Presence
 featured: true
-draft: false
 weight: 100
 ---
 

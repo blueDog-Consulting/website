@@ -32,15 +32,6 @@ yarn-error.log*
 
 # TypeScript
 *.tsbuildinfo
-next-env.d.ts
-
-# Hugo (legacy build output — do not ignore Next.js public/ source assets)
-/resources/_gen/
-hugo_stats.json
-hugo.exe
-hugo.darwin
-hugo.linux
-/.hugo_build.lock
 
 # Netlify
 .netlify

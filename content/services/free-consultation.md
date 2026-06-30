@@ -1,8 +1,6 @@
 ---
-title: "Free Consultation"
-date: 2024-04-14T17:21:31-07:00
+title: Free Consultation
 featured: true
-draft: false
 weight: 1
 ---
 

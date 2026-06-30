@@ -11,11 +11,6 @@ const dataDirectory = path.join(process.cwd(), "data");
 export interface PageFrontmatter {
   title?: string;
   description?: string;
-  meta_title?: string;
-  draft?: boolean;
-  layout?: string;
-  intro_image?: string;
-  intro_image_alt?: string;
   name?: string;
   image?: string;
   jobtitle?: string;
@@ -23,7 +18,8 @@ export interface PageFrontmatter {
   twitterhandle?: string;
   websiteurl?: string;
   github?: string;
-  description_field?: string;
+  featured?: boolean;
+  weight?: number;
   [key: string]: unknown;
 }
 
@@ -78,20 +74,6 @@ export function getServicesIndexPage(): ContentPage {
   return readMarkdownFile(
     path.join(contentDirectory, "services", "_index.md"),
     "services"
-  );
-}
-
-export function getTeamIndexPage(): ContentPage {
-  return readMarkdownFile(
-    path.join(contentDirectory, "team", "_index.md"),
-    "team"
-  );
-}
-
-export function getNotFoundPage(): ContentPage {
-  return readMarkdownFile(
-    path.join(contentDirectory, "404", "_index.md"),
-    "404"
   );
 }
 

@@ -50,13 +50,11 @@ export const footerNav = [
 export const features = featureItems as Array<{
   title: string;
   description: string;
-  image: string;
 }>;
 
 export const socialLinks = social as Array<{
   name: string;
   link: string;
-  image: string;
 }>;
 
 export const trustStats = [

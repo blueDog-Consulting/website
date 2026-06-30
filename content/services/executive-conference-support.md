@@ -1,8 +1,6 @@
 ---
-title: "Executive Conference Support"
-date: 2024-04-15T07:28:42-07:00
+title: Executive Conference Support
 featured: true
-draft: false
 weight: 100
 ---
 

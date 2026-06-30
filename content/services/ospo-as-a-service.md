@@ -1,8 +1,6 @@
 ---
-title: "OSPO as a Service"
-date: 2024-04-16T07:09:16-07:00
+title: OSPO as a Service
 featured: true
-draft: false
 weight: 100
 ---
 

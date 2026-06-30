@@ -1,8 +1,6 @@
 ---
-title: "Developer Experience Audit"
-date: 2024-04-14T18:21:00-07:00
+title: Developer Experience Audit
 featured: true
-draft: false
 weight: 3
 ---
 

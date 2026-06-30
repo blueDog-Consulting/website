@@ -1,8 +1,6 @@
 ---
-title: "Community Audit"
-date: 2024-04-14T18:14:39-07:00
+title: Community Audit
 featured: true
-draft: false
 weight: 2
 ---
 

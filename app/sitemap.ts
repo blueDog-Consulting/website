@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/site-config";
 export default function sitemap(): MetadataRoute.Sitemap {
   const services = getAllServices();
 
-  const staticRoutes = ["", "/about", "/contact", "/services", "/team"].map(
+  const staticRoutes = ["", "/about", "/contact", "/services"].map(
     (route) => ({
       url: `${siteConfig.url}${route}`,
       lastModified: new Date(),

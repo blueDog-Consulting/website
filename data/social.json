@@ -1,12 +1,10 @@
 [
-    {
-        "name": "Github",
-        "link": "https://github.com/blueDog-Consulting/",
-        "image": "images/social/github.svg"
-    },
-    {
-        "name": "Twitter",
-        "link": "https://twitter.com/Consult_blueDog",
-        "image": "images/social/twitter.svg"
-    }
+  {
+    "name": "Github",
+    "link": "https://github.com/blueDog-Consulting/"
+  },
+  {
+    "name": "Twitter",
+    "link": "https://twitter.com/Consult_blueDog"
+  }
 ]

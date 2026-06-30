@@ -1,8 +1,6 @@
 ---
-title: "General Consulting"
-date: 2024-04-14T18:29:36-07:00
+title: General Consulting
 featured: true
-draft: false
 weight: 5
 ---
 

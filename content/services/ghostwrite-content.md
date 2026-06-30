@@ -1,8 +1,6 @@
 ---
-title: "Ghostwrite Content"
-date: 2024-04-14T18:28:43-07:00
+title: Ghostwrite Content
 featured: true
-draft: false
 weight: 6
 ---
 

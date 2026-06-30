@@ -1,8 +1,6 @@
 ---
-title: "DevRel & Community Strategy"
-date: 2024-04-14T18:27:38-07:00
+title: DevRel & Community Strategy
 featured: true
-draft: false
 weight: 4
 ---
 

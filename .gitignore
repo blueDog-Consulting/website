@@ -1,14 +1,49 @@
-# Generated files by hugo
-/public/
-/resources/_gen/
-/assets/jsconfig.json
-hugo_stats.json
+# Dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
-# Executable may be added to repository
+# Next.js
+/.next/
+/out/
+
+# Production
+/build
+
+# Misc
+.DS_Store
+*.pem
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Env files
+.env*
+!.env.example
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Hugo (legacy build output — do not ignore Next.js public/ source assets)
+/resources/_gen/
+hugo_stats.json
 hugo.exe
 hugo.darwin
 hugo.linux
-
-# Temporary lock file while building
 /.hugo_build.lock
+
+# Netlify
+.netlify
+
+# IDE
 .vscode/settings.json

@@ -1,19 +1,15 @@
 [build]
-    command = "hugo --gc --minify"
-    publish = "public"
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "24"
 
 [context.production.environment]
-    HUGO_VERSION = "0.126.1"
-    HUGO_GOOGLE_ANALYTICS_ID = "G-VLW2VPS7H5"
+  NEXT_PUBLIC_GA_ID = "G-VLW2VPS7H5"
 
 [context.branch-deploy]
-command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
-
-    [context.branch-deploy.environment]
-    HUGO_VERSION = "0.126.1"
+  command = "npm run build"
 
 [context.deploy-preview]
-command = "hugo --gc --minify --buildFuture --buildDrafts -b $DEPLOY_PRIME_URL"
-
-    [context.deploy-preview.environment]
-    HUGO_VERSION = "0.126.1"
+  command = "npm run build"

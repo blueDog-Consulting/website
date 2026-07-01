@@ -18,6 +18,7 @@ export interface PageFrontmatter {
   twitterhandle?: string;
   websiteurl?: string;
   github?: string;
+  last_updated?: string;
   featured?: boolean;
   weight?: number;
   [key: string]: unknown;
@@ -68,6 +69,17 @@ export function getAboutPage(): ContentPage {
 
 export function getContactPage(): ContentPage {
   return readMarkdownFile(path.join(contentDirectory, "contact.md"), "contact");
+}
+
+export function getPrivacyPage(): ContentPage {
+  return readMarkdownFile(path.join(contentDirectory, "privacy.md"), "privacy");
+}
+
+export function getDataSafetyPage(): ContentPage {
+  return readMarkdownFile(
+    path.join(contentDirectory, "data-safety.md"),
+    "data-safety"
+  );
 }
 
 export function getServicesIndexPage(): ContentPage {

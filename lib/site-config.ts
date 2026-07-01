@@ -47,6 +47,11 @@ export const footerNav = [
   { name: "Contact", href: "/contact" },
 ] as const;
 
+export const legalNav = [
+  { name: "Privacy Policy", href: "/privacy" },
+  { name: "Data Safety", href: "/data-safety" },
+] as const;
+
 export const features = featureItems as Array<{
   title: string;
   description: string;

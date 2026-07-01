@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { GitHubIcon, XIcon } from "@/components/icons/BrandIcons";
-import { footerNav, siteConfig, socialLinks } from "@/lib/site-config";
+import { footerNav, legalNav, siteConfig, socialLinks } from "@/lib/site-config";
 
 function SocialIcon({ name }: { name: string }) {
   if (name.toLowerCase() === "github") {
@@ -53,12 +53,25 @@ export function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="mx-auto max-w-6xl px-4 py-4 text-sm text-white/60 sm:px-6 lg:px-8">
-          Copyright © {year}{" "}
-          <a href={siteConfig.url} className="hover:text-white">
-            blueDog Consulting LLC
-          </a>
-          . All rights reserved.
+        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 text-sm text-white/60 sm:px-6 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+          <p>
+            Copyright © {year}{" "}
+            <a href={siteConfig.url} className="hover:text-white">
+              blueDog Consulting LLC
+            </a>
+            . All rights reserved.
+          </p>
+          <nav aria-label="Legal">
+            <ul className="flex flex-wrap gap-x-4 gap-y-1">
+              {legalNav.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="hover:text-white">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </div>
     </footer>

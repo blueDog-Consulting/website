@@ -4,13 +4,10 @@ name: Jeremy Meiss
 image: 'images/team/jeremy-meiss.jpg'
 jobtitle: 'Co-Founder, Lead Consultant'
 description: |
-    Jeremy is an experienced Developer Relations and Community leader with nearly three decades of versatile experience in the tech industry, from support, networking, systems, databases, and application and website development, to developer relations and community engagement. With extensive experience at SMBs and enterprise companies like Auth0, CircleCI, Sprint, and Hallmark Cards, I am well-known for my commitment to, and advocacy for, open-source software and tools, and a deep passion for developer relations, community, and their role in improving the developer experience.
-
-    Beyond his professional pursuits, he is a husband and father, extremely passionate about coffee, the mountains, and exploring new technologies.
-
-    Jeremy has spent almost half of his career in DevRel, DevEx, and Community, and has a deep understanding of the tech industry. He is passionate about helping businesses and organizations achieve their goals, and commited to delivering high-quality results that exceed your expectations.
+    Jeremy is an international speaker and is currently a Technical Solution Architect, AI Native, at WWT, previously leading Developer Advocacy at OneStream Software, CircleCI, Solace, and Auth0. He has spent over 30 years in Tech, covering just about every functional area, including support, system and database administration, application and web development, project management, program management, and systems analysis. With extensive experience at SMBs and enterprise companies like Auth0, CircleCI, Sprint, and Hallmark Cards, Jeremy is well-known for his commitment to, and advocacy for, open-source software and tools, and a deep passion for developer relations, community, and their role in improving the developer experience.
 linkedinurl: "https://www.linkedin.com/in/jeremymeiss"
 twitterhandle: "IAmJerdog"
+blueskyhandle: "jerdog.dev"
 websiteurl: "https://jmeiss.me"
 github: "jerdog"
 ---

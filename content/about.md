@@ -6,7 +6,6 @@ jobtitle: 'Co-Founder, Lead Consultant'
 description: |
     Jeremy is an international speaker and is currently a Technical Solution Architect, AI Native, at WWT, previously leading Developer Advocacy at OneStream Software, CircleCI, Solace, and Auth0. He has spent over 30 years in Tech, covering just about every functional area, including support, system and database administration, application and web development, project management, program management, and systems analysis. With extensive experience at SMBs and enterprise companies like Auth0, CircleCI, Sprint, and Hallmark Cards, Jeremy is well-known for his commitment to, and advocacy for, open-source software and tools, and a deep passion for developer relations, community, and their role in improving the developer experience.
 linkedinurl: "https://www.linkedin.com/in/jeremymeiss"
-twitterhandle: "IAmJerdog"
 blueskyhandle: "jerdog.dev"
 websiteurl: "https://jmeiss.me"
 github: "jerdog"

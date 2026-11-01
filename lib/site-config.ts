@@ -5,7 +5,7 @@ export const siteConfig = {
   name: "blueDog Consulting LLC",
   url: "https://bluedog.dev",
   description:
-    "blueDog Consulting is a DevRel and Community consultancy helping companies build solid developer relations programs and improve developer experience.",
+    "blueDog Consulting builds custom apps and websites, and helps companies build solid developer relations programs and improve developer experience.",
   colors: {
     primary: "#0396FF",
     black: "#2f2f41",

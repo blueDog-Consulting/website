@@ -5,6 +5,7 @@ interface SectionProps {
   className?: string;
   alt?: boolean;
   id?: string;
+  "aria-labelledby"?: string;
 }
 
 export function Section({
@@ -12,10 +13,12 @@ export function Section({
   className = "",
   alt = false,
   id,
+  "aria-labelledby": labelledBy,
 }: SectionProps) {
   return (
     <section
       id={id}
+      aria-labelledby={labelledBy}
       className={[
         "py-16 md:py-24",
         alt ? "bg-surface-alt" : "bg-surface",
@@ -36,6 +39,7 @@ interface SectionHeaderProps {
   title: string;
   description?: string;
   align?: "left" | "center";
+  headingId?: string;
 }
 
 export function SectionHeader({
@@ -43,6 +47,7 @@ export function SectionHeader({
   title,
   description,
   align = "center",
+  headingId,
 }: SectionHeaderProps) {
   return (
     <div
@@ -56,7 +61,7 @@ export function SectionHeader({
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="text-3xl font-semibold text-ink md:text-4xl">{title}</h2>
+      <h2 id={headingId} className="text-3xl font-semibold text-ink md:text-4xl">{title}</h2>
       {description ? (
         <p className="mt-4 text-lg text-muted">{description}</p>
       ) : null}

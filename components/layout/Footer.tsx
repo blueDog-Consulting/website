@@ -14,11 +14,11 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border bg-ink text-white">
+    <footer className="border-t border-border bg-surface-alt text-ink">
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 py-12 sm:px-6 lg:px-8 md:flex-row md:items-start md:justify-between">
         <div className="max-w-sm">
           <p className="text-lg font-semibold">{siteConfig.name}</p>
-          <p className="mt-3 text-sm text-white/70">{siteConfig.description}</p>
+          <p className="mt-3 text-sm text-muted">{siteConfig.description}</p>
         </div>
 
         <nav aria-label="Footer">
@@ -27,7 +27,7 @@ export function Footer() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="text-sm text-white/80 hover:text-white"
+                  className="text-sm text-muted underline-offset-4 hover:text-primary hover:underline"
                 >
                   {item.name}
                 </Link>
@@ -43,8 +43,8 @@ export function Footer() {
               href={item.link}
               target="_blank"
               rel="noreferrer"
-              aria-label={item.name}
-              className="rounded-full border border-white/15 p-2 text-white transition-colors hover:border-primary hover:text-primary"
+              aria-label={`${item.name} (opens in a new tab)`}
+              className="rounded-full border border-border bg-white p-2.5 text-ink transition-colors hover:border-primary hover:text-primary"
             >
               <SocialIcon name={item.name} />
             </a>
@@ -52,11 +52,11 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 text-sm text-white/60 sm:px-6 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+      <div className="border-t border-border">
+        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 text-sm text-muted sm:px-6 sm:flex-row sm:items-center sm:justify-between lg:px-8">
           <p>
             Copyright © {year}{" "}
-            <a href={siteConfig.url} className="hover:text-white">
+            <a href={siteConfig.url} className="hover:text-primary hover:underline">
               blueDog Consulting LLC
             </a>
             . All rights reserved.
@@ -65,7 +65,7 @@ export function Footer() {
             <ul className="flex flex-wrap gap-x-4 gap-y-1">
               {legalNav.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="hover:text-white">
+                  <Link href={item.href} className="hover:text-primary hover:underline">
                     {item.name}
                   </Link>
                 </li>

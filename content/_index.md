@@ -1,6 +1,6 @@
 ---
 title: 'Homepage'
-description: "blueDog Consulting is a DevRel and Community consultancy."
+description: "blueDog Consulting builds custom apps and websites and helps companies with developer relations and developer experience."
 ---
 
 # Developer Relations and Community consultancy

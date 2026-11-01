@@ -1,20 +1,18 @@
+import { Capabilities } from "@/components/home/Capabilities";
+import { Cta } from "@/components/home/Cta";
 import { Hero } from "@/components/home/Hero";
-import { FeaturedServices } from "@/components/home/FeaturedServices";
+import { Projects } from "@/components/home/Projects";
 import { TrustStrip } from "@/components/home/TrustStrip";
-import { getFeaturedServices, getHomePage } from "@/lib/content";
-import { markdownToHtml } from "@/lib/markdown";
 import { siteConfig } from "@/lib/site-config";
 
-export default async function HomePage() {
-  const page = getHomePage();
-  const contentHtml = await markdownToHtml(page.content);
-  const featuredServices = getFeaturedServices();
-
+export default function HomePage() {
   return (
     <>
-      <Hero contentHtml={contentHtml} />
+      <Hero />
+      <Capabilities />
+      <Projects />
       {siteConfig.homepage.showFeatures ? <TrustStrip /> : null}
-      <FeaturedServices services={featuredServices} />
+      <Cta />
     </>
   );
 }

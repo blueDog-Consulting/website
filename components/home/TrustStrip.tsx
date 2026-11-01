@@ -12,7 +12,7 @@ export function TrustStrip() {
       <SectionHeader
         eyebrow="Why blueDog"
         title="Experience you can trust"
-        description="Practical DevRel and community expertise backed by decades in technology."
+        description="Practical engineering, DevRel, and community expertise backed by decades in technology."
       />
 
       <div className="grid gap-6 md:grid-cols-3">

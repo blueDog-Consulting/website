@@ -1,10 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0396ff;
-  --color-primary-dark: #0280db;
+  /* Brand blue is for decoration only (fails 4.5:1 as text on white).
+     --color-primary is the AA-safe action/text blue (6.9:1 on white). */
+  --color-brand: #0396ff;
+  --color-primary: #0357b3;
+  --color-primary-dark: #02448c;
   --color-ink: #2f2f41;
-  --color-muted: #5c5a5a;
+  --color-muted: #4a4a5a;
   --color-surface: #ffffff;
   --color-surface-alt: #f6f7ff;
   --color-border: #e4e8f5;
@@ -14,7 +17,19 @@
 }
 
 @layer base {
+  /* Light theme only: no dark mode by design. */
+  :root {
+    color-scheme: light only;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
   html {
+    scroll-padding-top: 5rem;
     scroll-behavior: smooth;
   }
 
@@ -81,5 +96,28 @@
       radial-gradient(circle at 80% 0%, rgb(3 150 255 / 0.12), transparent 40%),
       radial-gradient(circle at 100% 80%, rgb(47 47 65 / 0.06), transparent 35%),
       linear-gradient(180deg, #f6f7ff 0%, #ffffff 55%);
+  }
+}
+
+@layer components {
+  .dot-grid {
+    background-image: radial-gradient(rgb(47 47 65 / 0.12) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  .float-slow {
+    @media (prefers-reduced-motion: no-preference) {
+      animation: float 7s ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }

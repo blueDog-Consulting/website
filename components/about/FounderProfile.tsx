@@ -2,9 +2,9 @@ import Image from "next/image";
 import { Globe } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 import {
+  BlueskyIcon,
   GitHubIcon,
   LinkedInIcon,
-  XIcon,
 } from "@/components/icons/BrandIcons";
 import type { ContentPage } from "@/lib/content";
 import { type ComponentType, type SVGProps } from "react";
@@ -19,7 +19,7 @@ export function FounderProfile({ page }: FounderProfileProps) {
     image,
     jobtitle,
     linkedinurl,
-    twitterhandle,
+    blueskyhandle,
     websiteurl,
     github,
     description,
@@ -29,11 +29,11 @@ export function FounderProfile({ page }: FounderProfileProps) {
     linkedinurl
       ? { href: linkedinurl, label: "LinkedIn", icon: LinkedInIcon }
       : null,
-    twitterhandle
+    blueskyhandle
       ? {
-          href: `https://twitter.com/${twitterhandle}`,
-          label: "X (Twitter)",
-          icon: XIcon,
+          href: `https://bsky.app/profile/${blueskyhandle}`,
+          label: "Bluesky",
+          icon: BlueskyIcon,
         }
       : null,
     github

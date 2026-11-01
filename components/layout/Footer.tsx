@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { GitHubIcon, XIcon } from "@/components/icons/BrandIcons";
+import { BlueskyIcon, GitHubIcon } from "@/components/icons/BrandIcons";
 import { footerNav, legalNav, siteConfig, socialLinks } from "@/lib/site-config";
 
 function SocialIcon({ name }: { name: string }) {
@@ -7,7 +7,11 @@ function SocialIcon({ name }: { name: string }) {
     return <GitHubIcon className="h-5 w-5" />;
   }
 
-  return <XIcon className="h-5 w-5" />;
+  if (name.toLowerCase() === "bluesky") {
+    return <BlueskyIcon className="h-5 w-5" />;
+  }
+
+  return null;
 }
 
 export function Footer() {

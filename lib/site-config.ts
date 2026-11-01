@@ -19,8 +19,6 @@ export const siteConfig = {
     height: 40,
   },
   seo: {
-    twitterSite: "@Consult_blueDog",
-    twitterCreator: "@Consult_blueDog",
     ogImage: "/images/social/og-image.jpg",
   },
   homepage: {

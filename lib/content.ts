@@ -15,7 +15,7 @@ export interface PageFrontmatter {
   image?: string;
   jobtitle?: string;
   linkedinurl?: string;
-  twitterhandle?: string;
+  blueskyhandle?: string;
   websiteurl?: string;
   github?: string;
   last_updated?: string;
